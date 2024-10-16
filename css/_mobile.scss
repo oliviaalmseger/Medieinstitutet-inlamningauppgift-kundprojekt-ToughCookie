@@ -1,0 +1,13 @@
+body {
+    background-color: aqua;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    background-color: white; /*Göra om till variabler senare*/
+  
+    h1{
+      margin: 0;
+    }
+  }

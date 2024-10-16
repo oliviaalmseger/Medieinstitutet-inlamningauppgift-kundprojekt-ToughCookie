@@ -1,3 +1,7 @@
-body {
-  background-color: yellow;
+@import 'mobile';
+
+
+/*Desktop*/
+@media screen and (min-width:1280px) {
+  @import 'desktop';
 }
