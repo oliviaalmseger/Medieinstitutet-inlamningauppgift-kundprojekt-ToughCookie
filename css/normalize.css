@@ -290,7 +290,7 @@
   [type="search"] {
     -webkit-appearance: textfield; /* 1 */
     outline-offset: -2px; /* 2 */
-  }
+  } /*Testat både apperance: textfield och none? inget OK*/
   
   /**
    * Remove the inner padding in Chrome and Safari on macOS.
