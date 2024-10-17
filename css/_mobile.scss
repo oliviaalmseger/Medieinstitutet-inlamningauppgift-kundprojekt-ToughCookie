@@ -7,6 +7,11 @@ button {
   height: 35px;
   background: transparent;
   border: 0;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  z-index: 2; /*skulle även funka med 1 i detta fall*/
+  pointer-events: none; /*så ej registrerar några musklick*/
 
   span {
     display: block;
@@ -16,6 +21,18 @@ button {
     border-radius: 6px;
     margin-bottom: 4px;
   }
+
+}
+
+/*TESTAR */
+input {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1;
+  width: 35px;
+  height: 35px;
+  opacity: 0;
 }
 
 input:checked {
@@ -35,14 +52,25 @@ input:checked {
         transform: rotate(-45deg);
       }
     }
+    & nav.menu {
+      /*display: block; */
+      visibility: visible;
+      opacity: 1;
+    }
   }
 }
 
+
 nav.menu {
   position: fixed;
-  background-color: rgba(234, 230, 127, 0.5);
+  top: 0;
+  left: 0;
+  background-color: rgba(187, 174, 81, 0.5);
   width: 100vw; /*Hela vägen ut, hela vägen ner*/
   height: 100vh;
+  opacity: 0;
+  transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  visibility: hidden;
 }
 
 ul {
