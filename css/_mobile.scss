@@ -19,19 +19,21 @@ button {
 }
 
 input:checked {
-  + button {
-    span {
-      position: absolute;
-      transition: all 0.3s ease-in-out;
-    }
-    span:nth-child(2) {
-      opacity: 0;
-    }
-    span:nth-child(1) {
-      transform: rotate(45deg);
-    }
-    span:nth-child(3) {
-      transform: rotate(-45deg);
+  & + .meny {
+    button {
+      span {
+        position: absolute;
+        transition: all 0.3s ease-in-out;
+      }
+      span:nth-child(2) {
+        opacity: 0;
+      }
+      span:nth-child(1) {
+        transform: rotate(45deg);
+      }
+      span:nth-child(3) {
+        transform: rotate(-45deg);
+      }
     }
   }
 }
@@ -39,7 +41,7 @@ input:checked {
 nav.menu {
   position: fixed;
   background-color: rgba(234, 230, 127, 0.5);
-  width: 100vw;
+  width: 100vw; /*Hela vägen ut, hela vägen ner*/
   height: 100vh;
 }
 

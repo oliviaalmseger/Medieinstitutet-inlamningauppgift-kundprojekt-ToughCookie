@@ -1,5 +1,9 @@
 @import 'mobile';
 
+/*Desktop*/
+@media screen and (min-width:768px) {
+  @import 'tablet';
+}
 
 /*Desktop*/
 @media screen and (min-width:1280px) {
