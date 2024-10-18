@@ -105,3 +105,12 @@ header {
    }
 }
 
+.page1-img {
+  display: flex;
+  justify-content: center;
+  img {
+    max-width: 70%;
+    height: auto;
+  }
+  
+}

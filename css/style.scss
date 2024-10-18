@@ -2,6 +2,8 @@
  
 .text {
   max-width: 60ch;
+  font-family: 'Jockey One';
+  font-size: 16px;
 }
 /*.only-desktop {
   display: none;
@@ -13,8 +15,16 @@
 }
 
 /*Desktop - 1280px eller 1366?*/
-@media screen and (min-width:1366px) {
+@media screen and (min-width:1280px) {
   @import 'desktop';
+
+  .page1-img {
+    display: block;
+
+    img {
+      max-width: 100%;
+    }
+  }
   
  /* .only-desktop {
     display: block;

@@ -25,6 +25,9 @@ h1 {
     }
 }
 
+.text {
+    font-size: 2.5rem;
+  }
 
 .page1 {
     grid-column: span 11;
@@ -45,7 +48,7 @@ h1 {
    } 
 
    .bottom {
-        .image {
+        .page1-img {
             grid-column: span 5;
         }
         .text {
