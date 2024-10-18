@@ -1,11 +1,13 @@
 @import 'mobile';
  
-
+.text {
+  max-width: 60ch;
+}
 /*.only-desktop {
   display: none;
 }*/ 
 
-/*Tablet*/
+/*Tablet - OBS EJ "hugget i sten" bryt när det känns rätt*/
 @media screen and (min-width:768px) { 
   @import 'tablet';
 }

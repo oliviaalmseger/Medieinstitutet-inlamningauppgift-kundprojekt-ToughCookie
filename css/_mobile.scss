@@ -3,7 +3,7 @@ body {
   }
 
 header {
-  height: 60px;
+  height: 70px;
 }
   
 button {
@@ -12,7 +12,7 @@ button {
   background: transparent;
   border: 0;
   position: fixed;
-  left: 20px; /*right*/
+  left: 20px; /*right efter video*/
   top: 20px;
   z-index: 2; /*skulle även funka med 1 i detta fall*/
   pointer-events: none; /*så ej registrerar några musklick*/
@@ -88,6 +88,7 @@ ul {
   text-align: center;
 }
 
+
 header {
   display: flex;
    justify-content: space-between;
@@ -98,6 +99,8 @@ header {
      padding: 10px 45px;
      text-transform:uppercase;
      color: rgb(255, 255, 255);
+     font-size: clamp(1rem, 8vw, 4rem);
+
    }
 }
 
