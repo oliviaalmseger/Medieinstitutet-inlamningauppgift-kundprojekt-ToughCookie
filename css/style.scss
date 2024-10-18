@@ -5,7 +5,13 @@
   @import 'tablet';
 }
 
-/*Desktop*/
-@media screen and (min-width:1280px) {
+/*Desktop - 1280px eller 1366?*/
+@media screen and (min-width:1366px) {
   @import 'desktop';
 }
+
+/* Lägg in samma bakgrundsfärg för alla 
+enheter tillsammans här? OBS ändra färgkod
+body {
+  background-color: lawngreen;
+}*/ 

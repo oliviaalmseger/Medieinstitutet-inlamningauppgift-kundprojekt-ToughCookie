@@ -36,7 +36,7 @@ input {
 }
 
 input:checked {
-  & + .meny {
+  & + .menu {
     button {
       span {
         position: absolute;
@@ -52,7 +52,7 @@ input:checked {
         transform: rotate(-45deg);
       }
     }
-    & nav.menu {
+    & nav { /*tog bort .menu*/
       /*display: block; */
       visibility: visible;
       opacity: 1;
@@ -61,7 +61,7 @@ input:checked {
 }
 
 
-nav.menu {
+nav {/*tog bort .menu*/
   position: fixed;
   top: 0;
   left: 0;
