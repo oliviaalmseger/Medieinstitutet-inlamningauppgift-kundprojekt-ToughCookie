@@ -1,6 +1,10 @@
 body {
     background-color: aqua;
   }
+
+header {
+  height: 60px;
+}
   
 button {
   width: 35px;
@@ -8,7 +12,7 @@ button {
   background: transparent;
   border: 0;
   position: fixed;
-  right: 20px;
+  left: 20px; /*right*/
   top: 20px;
   z-index: 2; /*skulle även funka med 1 i detta fall*/
   pointer-events: none; /*så ej registrerar några musklick*/
@@ -28,7 +32,7 @@ button {
 input {
   position: fixed;
   top: 20px;
-  right: 20px;
+  left: 20px;/*right*/
   z-index: 1;
   width: 35px;
   height: 35px;
@@ -87,9 +91,11 @@ ul {
 header {
   display: flex;
    justify-content: space-between;
-   background-color: white; /*Göra om till variabler senare*/
+   background-color: rgb(255, 255, 255); /*Göra om till variabler senare*/
   
    h1{
      margin: 0;
+     text-transform:uppercase;
    }
 }
+

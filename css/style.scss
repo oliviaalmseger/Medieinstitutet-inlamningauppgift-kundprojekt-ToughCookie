@@ -1,13 +1,22 @@
 @import 'mobile';
+ 
 
-/*Desktop*/
-@media screen and (min-width:768px) {
+/*.only-desktop {
+  display: none;
+}*/ 
+
+/*Tablet*/
+@media screen and (min-width:768px) { 
   @import 'tablet';
 }
 
 /*Desktop - 1280px eller 1366?*/
 @media screen and (min-width:1366px) {
   @import 'desktop';
+  
+ /* .only-desktop {
+    display: block;
+  }*/ 
 }
 
 /* Lägg in samma bakgrundsfärg för alla 

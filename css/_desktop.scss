@@ -11,7 +11,20 @@ main {
 
 header {
     flex-direction: column;
+    height: auto;
+    display: grid;
+    grid-template-columns: span 1;
 }
+
+h1 {
+    span {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    position: block;
+    top: 50px;
+    }
+}
+
 
 .page1 {
     grid-column: span 11;
