@@ -56,7 +56,7 @@ input:checked {
         transform: rotate(-45deg);
       }
     }
-    & nav { /*tog bort .menu*/
+    & nav { 
       /*display: block; */
       visibility: visible;
       opacity: 1;
@@ -108,19 +108,6 @@ header {
 h2 {
   font-family: 'Roboto Condensed';
 }
-
-// p {
-//   width: 100%;
-//   display: flex;
-//   justify-content: center;
-//   text-align: center;
-// }
-    
-// .text {
-//   font-size: 1.5rem; /*obs funkar ej?*/
-//   max-width: 60ch; 
-//   margin: 0 auto;
-// }
 
 
 
