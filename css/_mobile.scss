@@ -168,12 +168,21 @@ p {
   
   text-align: center;
 
+  h3 {
+    font-family: 'Jockey One';
+    text-transform: uppercase;
+    font-size: 2rem;
+  }
+
   .about {
-    font-size: 1rem;
+    font-family: 'Roboto Condensed';
+    font-size: 1.45rem;
   }
 
   .price {
     display: block;
+    font-family: 'Jockey One';
+    font-size: 2rem;
     margin-bottom: 10px;
   }
 }
