@@ -100,10 +100,29 @@ header {
      text-transform:uppercase;
      color: rgb(255, 255, 255);
      font-size: clamp(1rem, 8vw, 4rem);
-     font-family: "Jockey One";
+     font-family: 'Jockey One';
 
    }
 }
+
+h2 {
+  font-family: 'Roboto Condensed';
+}
+
+// p {
+//   width: 100%;
+//   display: flex;
+//   justify-content: center;
+//   text-align: center;
+// }
+    
+// .text {
+//   font-size: 1.5rem; /*obs funkar ej?*/
+//   max-width: 60ch; 
+//   margin: 0 auto;
+// }
+
+
 
 .page1-img {
   display: flex;

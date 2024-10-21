@@ -1,10 +1,18 @@
 @import 'mobile';
  
+p {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
 .text {
   max-width: 60ch;
   font-family: 'Jockey One';
   font-size: 16px;
+  margin: 0 auto;
 }
+
 /*.only-desktop {
   display: none;
 }*/ 
@@ -17,6 +25,14 @@
 /*Desktop - 1280px eller 1366?*/
 @media screen and (min-width:1280px) {
   @import 'desktop';
+
+  /*TEST*/
+
+  p {
+    display: block;
+    text-align: left;
+    width: auto;
+  }
 
   .page1-img {
     display: block;

@@ -20,7 +20,7 @@ h1 {
     span {
     writing-mode: vertical-rl;
     text-orientation: upright;
-    position: block;
+    position: block; /*säger i FL anv. position:fixed, då ej ny rad*/
     top: 50px;
     }
 }
