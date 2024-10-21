@@ -145,3 +145,21 @@ p {
     }
 
 }
+
+.page2-images {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  .p2 {
+   
+    width: 30%;
+    height: auto;
+  }
+  .p2-middle {
+    width: 30%;
+    height: auto;
+    display: flex;
+    align-items: stretch;
+  }
+
+}
