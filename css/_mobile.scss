@@ -173,19 +173,27 @@ p {
     text-transform: uppercase;
     font-size: 2rem;
     display: inline-block;
-    margin: auto;
+    margin: auto 5px;
   }
 
   .tag {
 
     span {
-      background-color: #C347FF;
+      /*background-color: #C347FF;*/
       font-family: 'Courier Prime';
       text-transform: uppercase;
+    }
 
       /*lägg in respektive span för bakgrunds
       färger & rotation*/
+    .new {
+      background-color: #C347FF;
+      transform: rotate(3deg);
+      padding-inline: 15px;
+      display: inline-block;
+      margin-inline: 5px;
     }
+    
   }
 
   .about {
