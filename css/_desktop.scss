@@ -5,15 +5,18 @@ body {
 main {
     border: 2px solid green;
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(11, 1fr);
     gap: 16px;
+    /*flex-grow:1; lagt till*/
 }
 
 header {
     flex-direction: column;
     height: auto;
-    display: grid;
-    grid-template-columns: span 1;
+    /*display: grid;
+    grid-template-columns: span 1;*/
+    display: flex;
+    align-items: center;
 }
 
 h1 {
