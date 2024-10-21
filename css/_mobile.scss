@@ -165,7 +165,6 @@ p {
 }
 
 .menu-items {
-  
   text-align: center;
 
   h3 {
@@ -174,26 +173,41 @@ p {
     font-size: 2rem;
     display: inline-block;
     margin: auto 5px;
+    // display: flex;
+    // align-items: center;
+    // gap: 1px;
   }
 
   .tag {
+    display: inline-block;
+    transform: rotate(-3deg);
 
     span {
-      /*background-color: #C347FF;*/
       font-family: 'Courier Prime';
       text-transform: uppercase;
     }
 
-      /*lägg in respektive span för bakgrunds
-      färger & rotation*/
-    .new {
-      background-color: #C347FF;
-      transform: rotate(3deg);
-      padding-inline: 15px;
-      display: inline-block;
-      margin-inline: 5px;
-    }
-    
+      .new {
+        background-color: #C347FF;
+        transform: rotate(6deg);
+        padding-inline: 15px;
+        display: inline-block;
+        margin-inline: 5px;
+      }
+      .veg {
+        background-color: #00F500;
+        transform: rotate(0deg);
+        padding-inline: 15px;
+        display: inline-block;
+        margin-inline: 5px;
+      }
+      .pop {
+        background-color: yellow;
+        transform: rotate(0deg);
+        padding-inline: 2px;
+        display: inline-block;
+        margin-inline: 5px;
+      }   
   }
 
   .about {
