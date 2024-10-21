@@ -172,6 +172,20 @@ p {
     font-family: 'Jockey One';
     text-transform: uppercase;
     font-size: 2rem;
+    display: inline-block;
+    margin: auto;
+  }
+
+  .tag {
+
+    span {
+      background-color: #C347FF;
+      font-family: 'Courier Prime';
+      text-transform: uppercase;
+
+      /*lägg in respektive span för bakgrunds
+      färger & rotation*/
+    }
   }
 
   .about {
@@ -183,7 +197,7 @@ p {
     display: block;
     font-family: 'Jockey One';
     font-size: 2rem;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
 }
 
