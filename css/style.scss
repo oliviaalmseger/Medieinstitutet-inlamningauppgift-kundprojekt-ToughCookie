@@ -4,13 +4,12 @@
 
 @import 'mobile';
  
-p {
+
+.text {
   width: 100%;
   display: flex;
   justify-content: center;
   text-align: center;
-}
-.text {
   max-width: 60ch;
   font-family: 'Jockey One';
   font-size: rem (16);
