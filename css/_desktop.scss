@@ -33,12 +33,12 @@ h1 {
   }
 
 .page1 {
-    grid-column: span 11;
+    grid-column: span 10; /*Ingen skillnad här men i */ 
     min-height: 100vh;
     .top, .bottom {
         display: grid;
         gap: 16px;
-        grid-template-columns: repeat(11, 1fr);   
+        grid-template-columns: repeat(11, 1fr);  /*10?*/ 
     }
 
    .top {
@@ -60,3 +60,8 @@ h1 {
    }
     
 }
+/* Lägg till grid för page 2
+.page2 {
+    grid-column: span 2;
+    min-height: 100vh;
+}*/ 
