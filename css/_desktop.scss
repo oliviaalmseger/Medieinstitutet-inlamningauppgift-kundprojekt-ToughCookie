@@ -79,15 +79,18 @@ h1 {
         grid-template-columns: repeat(11, 1fr);
         width: auto; 
 
-
+/*object fit & cover*/
         .p2-1 {
             grid-column: span 3;
+            width: 100%;
         }
         .p2-middle {
             grid-column: span 4;
+            width: 100%;
         }
         .p2 {
             grid-column: span 4;
+            width: 100%;
         }
     }
 
@@ -96,6 +99,9 @@ h1 {
         grid-column: 2 / -1;
         display: grid;
         grid-template-columns: repeat(11, 1fr);
+        .tags {
+            grid-column: 1 / 4;
+        }
         .name {
             grid-column: 1 / 4; /*Innan: 2/span 4*/ 
         }
