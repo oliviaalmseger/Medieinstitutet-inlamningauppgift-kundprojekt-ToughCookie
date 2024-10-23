@@ -64,8 +64,38 @@ h1 {
    }
     
 }
-/* Lägg till grid för page 2
+// /* Lägg till grid för page 2*/
+
 .page2 {
-    grid-column: span 2;
     min-height: 100vh;
-}*/ 
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: auto auto; /*2 rader?*/
+    gap: 10px;
+
+    .page2-images {
+        grid-column: 1 / -1;
+        display: grid;
+        grid-template-columns: repeat(11, 1fr);
+
+        .p2-1 {
+            grid-column: span 3;
+        }
+        .p2-middle {
+            grid-column: span 4;
+        }
+        .p2 {
+            grid-column: span 4;
+        }
+    }
+    .name {
+        grid-column: span 4;
+    }
+    .about {
+        grid-column: span 6;
+    }
+    .price {
+        grid-column: span 1;
+    }
+}
+
