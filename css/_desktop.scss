@@ -30,10 +30,13 @@ h1 {
 
 .text {
     font-size: 2.5rem;
+    display: block;
+    justify-content: left;
+    text-align: left;
   }
 
 .page1 {
-    grid-column: span 10; /*Ingen skillnad här men i */ 
+    grid-column: span 10; /*Ingen skillnad här från 11 men i inspektor*/ 
     min-height: 100vh;
     .top, .bottom {
         display: grid;
@@ -42,11 +45,12 @@ h1 {
     }
 
    .top {
+        margin-bottom: 20px;
         .page-title {
         grid-column: span 4;
     }
     .text {
-        grid-column: span 7;
+        grid-column: span 6;
     }
    } 
 
