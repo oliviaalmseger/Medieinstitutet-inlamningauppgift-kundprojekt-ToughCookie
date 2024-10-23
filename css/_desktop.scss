@@ -23,8 +23,8 @@ h1 {
     span {
     writing-mode: vertical-rl;
     text-orientation: upright;
-    position: block; /*säger i FL anv. position:fixed, då ej ny rad*/
-    top: 50px;
+    display: block; /*säger i FL anv. position:fixed, då ej ny rad*/
+    margin-top: 50px;
     }
 }
 
@@ -36,12 +36,12 @@ h1 {
   }
 
 .page1 {
-    grid-column: span 10; /*Ingen skillnad här från 11 men i inspektor*/ 
+    grid-column: span 10;  
     min-height: 100vh;
     .top, .bottom {
         display: grid;
         gap: 16px;
-        grid-template-columns: repeat(11, 1fr);  /*10?*/ 
+        grid-template-columns: repeat(11, 1fr);   
     }
 
    .top {
@@ -50,7 +50,7 @@ h1 {
         grid-column: span 4;
     }
     .text {
-        grid-column: span 6;
+        grid-column: span 7;
     }
    } 
 
@@ -68,15 +68,17 @@ h1 {
 
 .page2 {
     min-height: 100vh;
-    display: grid;
+    grid-column: span 10;
     grid-template-columns: repeat(11, 1fr);
     grid-template-rows: auto auto; /*2 rader?*/
     gap: 10px;
 
     .page2-images {
-        grid-column: 1 / -1;
-        display: grid;
+        grid-column: 2 / -1;
+        display: grid; 
         grid-template-columns: repeat(11, 1fr);
+        width: auto; 
+
 
         .p2-1 {
             grid-column: span 3;
@@ -88,14 +90,21 @@ h1 {
             grid-column: span 4;
         }
     }
-    .name {
-        grid-column: span 4;
-    }
-    .about {
-        grid-column: span 6;
-    }
-    .price {
-        grid-column: span 1;
+
+    article { /*.menu-items istället?*/
+        text-align: left; /*För att "bryta centrering*/
+        grid-column: 2 / -1;
+        display: grid;
+        grid-template-columns: repeat(11, 1fr);
+        .name {
+            grid-column: 1 / 4; /*Innan: 2/span 4*/ 
+        }
+        .about {
+            grid-column: 5 / 11; /*Innan: span 6*/ 
+        }
+        .price {
+            grid-column: 11/ 12;
+        }
     }
 }
 
