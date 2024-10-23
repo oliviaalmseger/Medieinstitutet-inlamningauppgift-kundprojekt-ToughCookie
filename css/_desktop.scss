@@ -120,4 +120,14 @@ h1 {
     grid-template-columns: repeat(11, 1fr);
     grid-template-rows: auto auto; /*2 rader?*/
     gap: 10px;
+
+    .contact {
+        grid-column: 2 / 5;
+
+/*FORM ???*/
+    }
+    .img-p3 {
+        grid-column: span 5;
+        width: 100%;
+    }
 }

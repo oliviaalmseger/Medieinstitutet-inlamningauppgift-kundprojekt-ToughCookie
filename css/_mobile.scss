@@ -228,19 +228,35 @@ p {
   }
 }
 
-// .page3 {
+.page3 {
+  .contact {
+    h4 {
+      font-size: 3rem;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
 
-//   h4 {
-//     font-size: 3rem; /*Justera*/
-//   }
-//   form {
-//     font-family: 'Jockey One';
+      label {
+        margin-bottom: 10px;
+      }
 
-//     .form-input {
-//       border: 1px solid red;
-//     }
-//   }
- 
+      input {
+        border: 1px solid red;
+        border-radius: 8px;
+      }
+
+      .buttons {
+        background-color: #C347FF;
+
+        .form-button {
+          padding: 0 15px;
+        }
+      }
+    }
+    
+  }
+}
 
 
 
