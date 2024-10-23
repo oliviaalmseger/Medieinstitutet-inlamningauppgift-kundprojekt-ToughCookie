@@ -114,3 +114,10 @@ h1 {
     }
 }
 
+.page3 {
+    min-height: 100vh;
+    grid-column: span 10;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: auto auto; /*2 rader?*/
+    gap: 10px;
+}
