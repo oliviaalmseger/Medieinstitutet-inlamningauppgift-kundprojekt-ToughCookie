@@ -5,18 +5,21 @@ body {
 main {
     border: 2px solid green;
     display: grid;
-    grid-template-columns: repeat(11, 1fr);
+    grid-template-columns: repeat(10, 1fr);
     gap: 16px;
     /*flex-grow:1; lagt till*/
 }
 
 header {
     flex-direction: column;
-    height: auto;
-    /*display: grid;
-    grid-template-columns: span 1;*/
+   /* Innan demo height: auto;*/
+    display: grid;
+    grid-template-columns: span 1;
     display: flex;
     align-items: center;
+    /*efter demo här under*/
+    position: fixed; 
+    height: 100vh;
 }
 
 h1 {
@@ -24,7 +27,7 @@ h1 {
     writing-mode: vertical-rl;
     text-orientation: upright;
     display: block; /*säger i FL anv. position:fixed, då ej ny rad*/
-    margin-top: 50px;
+    margin-top: 30px;
     }
 }
 
@@ -34,6 +37,12 @@ h1 {
     justify-content: left;
     text-align: left;
   }
+
+  /*Marginal från vä-kant så 
+  tough cookie syns ordentligt*/
+.page1, .page2, .page3 {
+    margin-left: 90px;
+}
 
 .page1 {
     grid-column: span 10;  

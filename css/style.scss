@@ -1,6 +1,7 @@
 @function rem($size) {
   @return calc($size / 16) * 1rem;
-}
+} /*Fyller detta någon funktion om
+jag ändå använder rem ??*/
 
 @import 'mobile';
  
