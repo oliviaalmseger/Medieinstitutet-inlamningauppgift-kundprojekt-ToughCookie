@@ -3,7 +3,6 @@ body {
 }
 
 main {
-    border: 2px solid green; /*TA BORT border*/ 
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     gap: 16px;
