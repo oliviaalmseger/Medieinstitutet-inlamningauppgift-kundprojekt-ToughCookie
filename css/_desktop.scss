@@ -129,19 +129,33 @@ h1 {
 }
 
 .page3 {
+    background-color: #5fff37;
+    color: black;
+    border-left: 16px; /*10?*/
+    border-right: 16px;
     min-height: 100vh;
+
+    display: grid;
     grid-column: span 10;
     grid-template-columns: repeat(11, 1fr);
     grid-template-rows: auto auto; /*2 rader?*/
     gap: 10px;
+    align-items: center;
 
     .contact {
-        grid-column: 2 / 5;
+        grid-column: span 5;
+        padding-left: 8px;
 
 /*FORM ???*/
     }
     .img-p3 {
-        grid-column: span 5;
-        width: 100%;
+        grid-column: span 6;
+        display: flex;
+        justify-content: center;
+
+        img {
+        max-width: 100%;
+        height: auto;
+        }
     }
 }
