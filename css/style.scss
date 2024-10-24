@@ -3,6 +3,10 @@
 } /*Fyller detta någon funktion om
 jag ändå använder rem ??*/
 
+* {
+  box-sizing: border-box;
+}
+
 @import 'mobile';
  
 
@@ -45,13 +49,5 @@ jag ändå använder rem ??*/
     }
   }
   
- /* .only-desktop {
-    display: block;
-  }*/ 
 }
 
-/* Lägg in samma bakgrundsfärg för alla 
-enheter tillsammans här? OBS ändra färgkod
-body {
-  background-color: lawngreen;
-}*/ 

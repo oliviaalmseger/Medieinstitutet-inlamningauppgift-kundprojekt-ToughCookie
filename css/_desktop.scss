@@ -3,7 +3,7 @@ body {
 }
 
 main {
-    border: 2px solid green;
+    border: 2px solid green; /*TA BORT border*/ 
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     gap: 16px;
@@ -17,9 +17,11 @@ header {
     grid-template-columns: span 1;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     /*efter demo här under*/
     position: fixed; 
     height: 100vh;
+    width: 90px; 
 }
 
 h1 {
@@ -41,12 +43,15 @@ h1 {
   /*Marginal från vä-kant så 
   tough cookie syns ordentligt*/
 .page1, .page2, .page3 {
-    margin-left: 90px;
+    margin-left: 95px;
+    min-height: 100vh;
 }
 
 .page1 {
     grid-column: span 10;  
     min-height: 100vh;
+    padding-left: 10px; /*Ev bredare?*/
+    padding-right: 10px;
     .top, .bottom {
         display: grid;
         gap: 16px;
@@ -56,10 +61,10 @@ h1 {
    .top {
         margin-bottom: 20px;
         .page-title {
-        grid-column: span 4;
+        grid-column: span 4; /*ev 1/span 4?*/
     }
     .text {
-        grid-column: span 7;
+        grid-column: span 7; /* ev 5 / span 7*/
     }
    } 
 
