@@ -29,6 +29,14 @@ jag ändå använder rem ??*/
   @import 'tablet';
 }
 
+// .desktop-only {
+//   display: none;
+
+//   @media (min-width: 1280;) {
+//     display: block;
+//   }
+// }
+
 /*Desktop - 1280px eller 1366?*/
 @media screen and (min-width:1280px) {
   @import 'desktop';
