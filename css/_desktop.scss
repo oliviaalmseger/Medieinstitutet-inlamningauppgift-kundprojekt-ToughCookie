@@ -33,7 +33,7 @@ h1 {
 }
 
 .text {
-    font-size: 2.5rem;
+    font-size: 3.4rem;
     display: block;
     justify-content: left;
     text-align: left;
@@ -70,9 +70,31 @@ h1 {
    .bottom {
         .page1-img {
             grid-column: span 5;
+            background-image: url('../assets/img/lettuce.jpg');
+            background-size: cover;
+            background-position: center center;
+            position: relative;
+
+            &:hover {
+                .arrow {
+                    bottom: 16px; /*åka upp/ner??*/
+                }
+            }
         }
+
+    .arrow {
+        transform: rotate(90deg);
+        position: absolute;
+        bottom: 10px;
+        left: 8px;
+        transition: bottom 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+
         .text {
             grid-column: span 6;
+            border-left: 10px solid red;
+            padding-left: 10px;
+            font-size: 3.4rem;
         }
    }
     
