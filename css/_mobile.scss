@@ -276,28 +276,43 @@ p {
 }
 
 .page3 {
+  border:10px solid $secondary-color;
+  font-family: $primary-font;
+  text-transform: uppercase;
+  color: white;
+
   .contact {
     h4 {
       font-size: 3rem;
+    
     }
     form {
       display: flex;
       flex-direction: column;
+      font-size: 2rem;
 
       label {
         margin-bottom: 10px;
       }
 
       input {
-        border: 1px solid red;
-        border-radius: 8px;
+        border-radius: 10px;
       }
 
       .buttons {
-        background-color: #C347FF;
+        // background-color: #C347FF;
 
         .form-button {
-          padding: 0 15px;
+          font-family: $primary-font;
+          text-transform: uppercase;
+          color: black;
+          padding: 0 25px;
+        }
+        .cancel-button {
+          background-color: $third-color;
+        }
+        .request-button {
+          background-color: $primary-color;
         }
       }
     }
