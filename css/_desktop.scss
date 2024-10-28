@@ -155,7 +155,7 @@ h1 {
         }
     }
 
-    .test {
+    .item {
         display: grid;
         grid-column: 2 / -1 ;
         grid-row: 2;
@@ -173,6 +173,7 @@ h1 {
         }
         .tags {
             grid-column: 1 / 4;
+            
         }
         .about {
             grid-column: 5 / 11;
@@ -180,8 +181,6 @@ h1 {
         .price {
             grid-column: 11 / 12;
         }
-
-
     }
 
 
