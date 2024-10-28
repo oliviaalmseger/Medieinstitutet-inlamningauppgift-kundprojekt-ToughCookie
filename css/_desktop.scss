@@ -75,8 +75,6 @@ h1 {
             background-position: center center;
             position: relative;
 
-           
-
             &:hover {
                 .arrow {
                     bottom: 16px; /*åka upp/ner??*/
@@ -84,7 +82,6 @@ h1 {
             }
         }
     
-
     .arrow {
         
         transform: rotate(90deg);
@@ -92,24 +89,19 @@ h1 {
         bottom: 10px;
         left: 8px;
         transition: bottom 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
-            
-
     }
     
-    
-
         .text {
             grid-column: span 6;
             border-left: 10px solid red;
             padding-left: 10px;
             font-size: 3.4rem;
         }
-   }
-    
+   } 
 }
 // /* Lägg till grid för page 2*/
 
-.page2 {
+.page2 { /*Behövs 113-116?/Jenni*/
     min-height: 100vh;
     grid-column: span 10;
     grid-template-columns: repeat(11, 1fr);

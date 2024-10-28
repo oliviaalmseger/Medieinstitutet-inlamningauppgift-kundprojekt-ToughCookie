@@ -17,7 +17,7 @@
         <input class="hamburger" type="checkbox">
         <!--Bättre att sätta klass på denna input än form-->
 
-        <div class="menu">
+        <div class="menu"> <!--Knapp:Glöm ej a11y-->
           <button>
             <span></span>
             <span></span>
@@ -26,17 +26,17 @@
   
           <nav>
             <ul>
-              <li>Hem</li>
-              <li>Om oss</li>
-              <li>Kontakt</li>
+              <li>Home</li>
+              <li>Menu</li>
+              <li>Book table</li>
             </ul>
           </nav>
         </div>
 
       
       <h1>
-        <span>tough</span>
-        <span>cookie</span>
+        <span>Tough</span>
+        <span>Cookie</span>
       </h1>
     </header>
   
@@ -61,6 +61,7 @@
         <p class="text">Crispy iceberg lettuce Caribbean red habanero blueberry chia seed jam overflowing berries roasted butternut squash basmati thyme hummus falafel bowl cosy butternut cilantro lime vinaigrette heat mint potato chocolate cookie seeds samosa walnut mushroom tart.</p>
         <a href="#">explore menu</a> <!--Lägg in ikon PIL, byt ut, inte bild -->
         <!--Kanske <i class="icon-arrow-forward"></i> eller inte "icon?"-->
+        <!--Bild?! Ja-->
       </section>
     </div>
 
@@ -74,45 +75,45 @@
       <div class="menu-items">
         
         <div class="tags">
-          <h3 class="name">halloumi moklieh</h3>
+          <h3 class="name">Halloumi moklieh</h3>
           <span class="tag">
-            <span class="new">new!</span>
+            <span class="new">New!</span>
           </span>
         </div>
         <p class="about">Deep-fried halloumi</p>
         <span class="price">195 kr</span>
       
-        <h3 class="name">mojaddara</h3>
+        <h3 class="name">Mojaddara</h3>
         <p class="about">Green lentis with rice and fried onion</p>
         <span class="price">135 kr</span>
 
-        <h3 class="name">chiar & laban</h3>
+        <h3 class="name">Chiar & laban</h3>
         <p class="about">Lebanese spicy yoghurt with chopped cucumber</p>
         <span class="price">95 kr</span>
 
-        <h3 class="name">warak inab</h3>
+        <h3 class="name">Warak inab</h3>
         <p class="about">Rice- and veggie-filled dolma with mint and lemon</p>
         <span class="price">85 kr</span>
 
         <div class="tags">
-          <h3 class="name">moutabbal batinzian</h3>
+          <h3 class="name">Moutabbal batinzian</h3>
           <span class="tag">
-            <span class="veg">vegan</span>
+            <span class="veg">Vegan</span>
           </span> 
         </div>  
           <p class="about">Smoked chopped aubergine, sesame paste, garlic and lemon</p>
         <span class="price">175 kr</span>
 
         <div class="tags">
-          <h3 class="name">ardishoki</h3>
+          <h3 class="name">Ardishoki</h3>
           <span class="tag">
-            <span class="pop">popular</span>
+            <span class="pop">Popular</span>
           </span> 
         </div>  
         <p class="about">Artichoke with lemon and garlic marinade</p>
         <span class="price">99 kr</span>
 
-        <h3 class="name">mhamara</h3>
+        <h3 class="name">Mhamara</h3>
         <p class="about">Spicy bell pepper relish with crushed walnuts and pomegranate syrup</p>
         <span class="price">123 kr</span>
       
@@ -126,28 +127,28 @@
         <h4>Book your table</h4>
         <form>
           <label>
-            <span>Namn</span>
-            <input type="text" placeholder="För- och efternamn">
+            <span>Namn</span> <!--Tagit bort placeholders-->
+            <input type="text">
           </label>
           <label>
             <span>Email</span>
-            <input type="email" placeholder="emailadess">
+            <input type="email">
           </label>
           <label>
             <span>Telenr</span>
-            <input type="tel" placeholder="Telefonnummr">
+            <input type="tel">
           </label>
           <label>
             <span>Date</span>
-            <input type="date" placeholder="DAtum">
+            <input type="date">
           </label>
           <label>
             <span>Party size</span>
-            <input type="number" placeholder="partysize">
+            <input type="number">
           </label>
           <label>
             <span>Allgergies</span>
-            <input type="text" placeholder="allergies">
+            <input type="text">
           </label>
 
           <div class="buttons">

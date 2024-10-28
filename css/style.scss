@@ -7,6 +7,16 @@ jag ändå använder rem ??*/
   box-sizing: border-box;
 }
 
+/*Mina variabler*/
+$primary-color: #fff236 
+$secondary-color:#00ff37
+$third-color: #aa75ff 
+
+$primary-font: "Jockey One"; 
+$secondary-font: "Roboto Condensed"; 
+
+
+
 @import 'mobile';
  
 
@@ -40,7 +50,7 @@ jag ändå använder rem ??*/
 @media screen and (min-width:1280px) {
   @import 'desktop';
 
-  /*TEST*/
+  
 
   p {
     display: block;
@@ -50,7 +60,6 @@ jag ändå använder rem ??*/
 
   .page1-img {
     /*display: block;*/
-
     img {
       max-width: 100%;
     }
