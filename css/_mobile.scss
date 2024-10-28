@@ -73,7 +73,7 @@ nav {/*tog bort .menu*/
   background-color: #C347FF;
   width: 100vw; /*Hela vägen ut, hela vägen ner*/
   height: 100vh;
-  opacity: 0;
+  /*opacity: 0;*/
   transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
   visibility: hidden;
 }
@@ -87,6 +87,7 @@ ul {
   height: 100%;
   justify-content: space-evenly;
   text-align: center;
+  z-index: 10; /*Rätt?*/
 
   li {
     font-family: 'Jockey One';
