@@ -1,9 +1,10 @@
 body {
-    background-color: aqua;
+    background-color: black;
   }
 
 header {
   height: 70px;
+  border-bottom: 15px solid $primary-color;
 }
   
 button {
@@ -171,10 +172,12 @@ header {
 
 p {
   font-size: 1.25rem;
+  color: white;
   .text {
     display: flex;
     justify-content: center;
     text-align: center;
+    
   }
 }
 
@@ -183,11 +186,12 @@ p {
     a {
       font-size: 1.25rem;
       font-family: 'Jockey One';
-      color: rgb(0, 0, 0);
+      color: white;
       text-transform: uppercase;
       text-decoration: none;
-    }
+    } /*PILEN?*/ 
 }
+
 
 .page2-images {
   display: flex;
@@ -208,6 +212,7 @@ p {
 
 .menu-items {
   text-align: center;
+  color: white;
 
   h3 {
     font-family: 'Jockey One';
@@ -219,6 +224,7 @@ p {
   }
 
   .tag {
+    color: black;
     display: inline-block;
     transform: rotate(-3deg);
     z-index: -5; /*OBS funkar ej? WHY?*/

@@ -1,6 +1,6 @@
-body {
-    background-color: rgb(244, 254, 202);
-}
+// body {
+//     background-color: rgb(244, 254, 202);
+// }
 
 main {
     display: grid;
@@ -21,6 +21,7 @@ header {
     position: fixed; 
     height: 100vh;
     width: 90px; 
+    border-right: 15px solid $primary-color;
 }
 
 h1 {
@@ -37,6 +38,7 @@ h1 {
     display: block;
     justify-content: left;
     text-align: left;
+    color: $secondary-color;
   }
 
   /*Marginal från vä-kant så 
@@ -97,6 +99,7 @@ h1 {
     }
     
         .text {
+            color: $third-color;
             grid-column: span 6;
             border-left: 10px solid $primary-color;
             padding-left: 10px;
