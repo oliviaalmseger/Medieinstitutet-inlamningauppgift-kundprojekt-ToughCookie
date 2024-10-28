@@ -133,6 +133,7 @@ h1 {
 // /* Lägg till grid för page 2*/
 
 .page2 { 
+    background-color: $primary-color;
     min-height: 100vh;
     grid-column: span 10;
     grid-template-columns: repeat(11, 1fr);
@@ -151,7 +152,7 @@ h1 {
         .p2-1, .p2-middle, .p2 {
             object-fit: cover;
             width: 100%;
-            height: 100%;
+            height: 300px;
         }
 
         .p2-1 {
