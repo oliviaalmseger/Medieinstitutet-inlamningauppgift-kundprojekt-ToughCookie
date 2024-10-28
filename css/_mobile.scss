@@ -3,8 +3,8 @@ body {
   }
 
 header {
-  height: 70px;
-  border-bottom: 15px solid $primary-color;
+  height: 95px;
+  border-bottom: 10px solid $primary-color;
 }
   /*Button här under*/
 button {
@@ -104,11 +104,13 @@ header {
   width: 100vw;
   justify-content: center;
   background-color: rgb(0, 0, 0); /*Göra om till variabler senare*/
-  
+  // padding-bottom: 16px;
+
    h1{
-     /*margin: 0;*/
-     margin-top: 5px;
-     /*padding: 10px 45px;*/ /*Innan demo*/
+    
+     margin-top: 20px;
+    //  padding-bottom: 20px;
+    //  padding: 10px 45px; /*Innan demo*/
      text-transform:uppercase;
      color: rgb(255, 255, 255);
      font-size: clamp(1rem, 8vw, 2.5rem);
