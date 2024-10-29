@@ -128,8 +128,9 @@ header {
   min-height: 300px;
   z-index: -1;
 
-  div {
+  h2 {
     position: absolute;
+    margin: 0;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
