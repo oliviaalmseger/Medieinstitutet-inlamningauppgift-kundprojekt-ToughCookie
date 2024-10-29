@@ -235,25 +235,6 @@ h2 {
         grid-column: span 5;
         padding-left: 8px;
 
-        .contact-info {
-            top: 50%;
-            left: 50%;
-            padding: 0;
-            position: absolute;
-            transform: translate(-50%, -50%);
-
-            .contact-list {
-                display: flex;
-                justify-content: flex-start;
-                font-size: 20px;
-
-                .a {
-                    text-decoration: none;
-                }
-            }
-        }
-
-
     }
     .img-p3 {
         grid-column: span 6;
@@ -261,19 +242,52 @@ h2 {
         justify-content: center;
         align-items: center;
         position: relative;
+        background-color: salmon;
 
         .table {
-            background-image: url("../assets/img/tablesetting.jpg");
+            background-image: url(/assets/img/tablesetting.jpg);
             background-size: cover;
             background-position: center;
-            filter: blur(3px);
+            // filter: blur(3px);
             height: 500px;
             width: 500px;
+            position: relative;
+
+            .contact-info { /*UL*/ 
+                top: 50%;
+                left: 50%;
+                padding: 0;
+                position: absolute;
+                transform: translate(-50%, -50%);
+                list-style: none;
+    
+                .contact-list { /*Li*/
+                    display: flex;
+                    // justify-content: flex-start;
+                    // font-size: 20px;
+                    // text-decoration: none;
+                    align-items: center;
+                
+                    
+    
+                    a {
+                        text-decoration: none;
+                        color: red;
+                        display: flex;
+                        align-items: center;
+                        /*anv ikon klassnamn ist?*/
+                        span {
+                            font-size: 2rem;
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
         }
+
     }
+    
 
-    // .contact-info {
-    //     text-shadow: -1.5px -1.5px o black;
-    // }
 
+   
 }
