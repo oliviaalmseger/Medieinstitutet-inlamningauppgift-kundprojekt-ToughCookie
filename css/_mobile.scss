@@ -81,7 +81,7 @@ nav {
   z-index: 2;
 }
 
-ul {
+.options {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -92,11 +92,11 @@ ul {
   text-align: center;
   
 
-  li {
+  .menu-list {
     font-family: 'Jockey One';
     text-transform: uppercase;
     color: rgb(255, 255, 255);
-    font-size: 3rem;
+    font-size: 4rem;
   }
 }
 
