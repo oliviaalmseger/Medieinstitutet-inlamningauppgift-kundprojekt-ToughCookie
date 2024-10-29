@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Inlämningsuppgift 2 - Kundprojekt.</title>
-  <link rel="stylesheet" href="css/normalize.css" type="text/css"> <!--OBS vill ha denna högst upp för att CSS topdown-->
+  <!--<link rel="stylesheet" href="css/normalize.css" type="text/css"> OBS vill ha denna högst upp för att CSS topdown-->
   <link rel="stylesheet" href="css/style.css" type="text/css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jockey One|Roboto Condensed|Courier Prime">
 
@@ -18,7 +18,7 @@
         <span>Cookie</span>
       </h1>
 
-        <input class="hamburger" type="checkbox">
+        <input class="hamburger" type="checkbox" name="hamburger-menu">
         <!--Bättre att sätta klass på denna input än form-->
 
         <div class="menu"> <!--Knapp:Glöm ej a11y-->
@@ -138,27 +138,27 @@
         <form>
           <label>
             <span>Name</span> <!--Tagit bort placeholders-->
-            <input type="text" name="name">
+            <input type="text" name="name" autocomplete="name">
           </label>
           <label>
             <span>Email</span>
-            <input type="email" name="email">
+            <input type="email" name="email" autocomplete="email">
           </label>
           <label>
             <span>Phone</span>
-            <input type="tel" name="phone">
+            <input type="tel" name="phone" autocomplete="tel">
           </label>
           <label>
             <span>Date</span>
-            <input type="date" name="booking_date">
+            <input type="date" name="booking_date" autocomplete="off">
           </label>
           <label>
             <span>Party size</span>
-            <input type="number" name="quantity">
+            <input type="number" name="quantity" autocomplete="off">
           </label>
           <label>
             <span>Allgergies</span>
-            <input type="text" name="comments">
+            <input type="text" name="comments" autocomplete="off">
           </label>
 
           <div class="buttons">
