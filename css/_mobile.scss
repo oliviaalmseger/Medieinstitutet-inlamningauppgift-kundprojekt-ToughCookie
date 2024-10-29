@@ -103,6 +103,7 @@ ul {
 
 header {
   display: flex;
+  z-index: 2; /*!!!*/ 
   width: 100vw;
   justify-content: center;
   background-color: rgb(0, 0, 0); /*Göra om till variabler senare*/
