@@ -231,6 +231,7 @@ p {
     display: inline-block;
     transform: rotate(-3deg);
     z-index: -5;
+    position: relative; /*?!*/
     
 
     span {
@@ -280,7 +281,7 @@ p {
   font-family: $primary-font;
   text-transform: uppercase;
   color: white;
-  padding-left: 30px;
+  padding: 0 30px;
 
   .contact {
     h4 {
@@ -291,7 +292,7 @@ p {
       display: flex;
       flex-direction: column;
       font-size: 2rem;
-      // padding-left: 30px;
+      // padding-left: 20px;
 
       label {
         margin-bottom: 15px;
