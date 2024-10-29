@@ -235,17 +235,21 @@ h2 {
     .contact {
         grid-column: span 5;
         padding-left: 8px;
-
-/*FORM ???*/
     }
     .img-p3 {
         grid-column: span 6;
         display: flex;
         justify-content: center;
+        align-items: center;
+        position: relative;
 
-        img {
-        max-width: 100%;
-        height: auto;
+        .table {
+            background-image: url("../assets/img/tablesetting.jpg") !important;
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            width: 500px;
         }
     }
+
 }
