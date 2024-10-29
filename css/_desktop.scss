@@ -56,7 +56,7 @@ h1 {
     padding-right: 10px;
     .top, .bottom {
         display: grid;
-        gap: 16px;
+        // gap: 16px; /*får upp meny */ 
         grid-template-columns: repeat(11, 1fr);  
         grid-template-rows: auto auto;
     }
@@ -88,8 +88,6 @@ h1 {
                 // height: 100%;
             }
 
-        
-
             &:hover {
                 .arrow {
                     bottom: 16px; /*åka upp/ner??*/
@@ -117,6 +115,7 @@ h1 {
             padding-left: 10px;
             font-size: 3.3rem;
             margin: 0; /*?*/
+            display: inline;
         }
     .menu-link {
         grid-column: 6 / span 6;
