@@ -221,8 +221,7 @@ h2 {
 .page3 {
     background-color: #5fff37;
     color: black;
-    border-left: 16px; /*10?*/
-    border-right: 16px;
+    border-left: 10px solid white;
     min-height: 100vh;
 
     display: grid;
@@ -235,6 +234,26 @@ h2 {
     .contact {
         grid-column: span 5;
         padding-left: 8px;
+
+        .contact-info {
+            top: 50%;
+            left: 50%;
+            padding: 0;
+            position: absolute;
+            transform: translate(-50%, -50%);
+
+            .contact-list {
+                display: flex;
+                justify-content: flex-start;
+                font-size: 20px;
+
+                .a {
+                    text-decoration: none;
+                }
+            }
+        }
+
+
     }
     .img-p3 {
         grid-column: span 6;
@@ -244,12 +263,17 @@ h2 {
         position: relative;
 
         .table {
-            background-image: url("../assets/img/tablesetting.jpg") !important;
+            background-image: url("../assets/img/tablesetting.jpg");
             background-size: cover;
             background-position: center;
+            filter: blur(3px);
             height: 500px;
             width: 500px;
         }
     }
+
+    // .contact-info {
+    //     text-shadow: -1.5px -1.5px o black;
+    // }
 
 }
