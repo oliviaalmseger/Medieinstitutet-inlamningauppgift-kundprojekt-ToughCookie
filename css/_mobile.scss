@@ -291,7 +291,7 @@ på menyer från mobilen. Jag tycker att det blir tydligt.*/
   font-family: $primary-font;
   text-transform: uppercase;
   color: white;
-  padding: 0 30px;
+  padding: 0 20px;
 
   .contact {
     h4 {
@@ -301,7 +301,7 @@ på menyer från mobilen. Jag tycker att det blir tydligt.*/
     form {
       display: flex;
       flex-direction: column;
-      font-size: 2rem;
+      font-size: 2.2rem;
       // padding-left: 20px;
 
       label {
@@ -313,17 +313,19 @@ på menyer från mobilen. Jag tycker att det blir tydligt.*/
         span {
           flex: 1;
           max-width: 150px;
+          margin-right: 10px;
         }
       }
 
       input {
-        border-radius: 13px;
+        border-radius: 20px;
+        border: none;
         flex: 2;
+
       }
 
       .buttons {
         margin: 10px 0;
-        // background-color: #C347FF;
 
         .form-button {
           font-family: $primary-font;

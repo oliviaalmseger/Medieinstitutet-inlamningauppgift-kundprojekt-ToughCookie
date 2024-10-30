@@ -235,6 +235,11 @@ h2 {
         grid-column: span 5;
         padding-left: 8px;
 
+        input {
+            max-width: 73%;
+            margin-left: 5px;
+        }
+
     }
     .img-p3 {
         grid-column: span 6;
