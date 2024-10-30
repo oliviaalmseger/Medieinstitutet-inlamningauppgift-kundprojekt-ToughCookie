@@ -95,8 +95,19 @@ nav {
   .menu-list {
     font-family: 'Jockey One';
     text-transform: uppercase;
-    color: rgb(255, 255, 255);
+    // color: rgb(255, 255, 255);
     font-size: 4rem;
+
+    a {
+      text-decoration: none;
+      color: white;
+      display: inline-block;
+      transition: transform 0.3 ease;
+
+      &:hover {
+        transform: translateX(10px); /*X flyttar endast x-axel*/ 
+      }
+    }
   }
 }
 
