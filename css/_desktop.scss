@@ -268,7 +268,7 @@ h1 {
 
             &::before {
                 content:""; 
-                background-image: url(/assets/img/tablesetting.jpg);
+                background-image: url("../assets/img/tablesetting.jpg");
                 background-size: cover;
                 background-position: center;
                 filter: blur(3px);
