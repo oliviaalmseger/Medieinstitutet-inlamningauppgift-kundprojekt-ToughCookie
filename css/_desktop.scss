@@ -236,36 +236,34 @@ h2 {
         padding-left: 8px;
 
     }
-    // .img-p3 {
-    //     grid-column: span 6;
-    //     display: flex;
-    //     justify-content: center;
-    //     align-items: center;
-    //     position: relative;
-    //     background-color: salmon;
+    .img-p3 {
+        grid-column: span 6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        background-color: $secondary-color; /*ta bort/gör grön*/
+        border: none; /*Ev. ta bort?*/ 
 
-    //     .table {
-    //         // background-image: url(/assets/img/tablesetting.jpg);
-    //         // background-size: cover;
-    //         // background-position: center;
-    //         // filter: blur(3px);
-    //         height: 500px;
-    //         width: 500px;
-    //         position: relative;
+        .table {
+            // background-image: url(/assets/img/tablesetting.jpg);
+            // background-size: cover;
+            // background-position: center;
+            // filter: blur(3px);
+            height: 500px;
+            width: 500px;
+            position: relative;
 
-    //         &::before {
-    //             content:""; 
-    //             background-image: url(/assets/img/tablesetting.jpg);
-    //             background-size: cover;
-    //             background-position: center;
-    //             filter: blur(3px);
-    //             position: absolute;
-    //             inset: 0;
-    //             // top: 0;
-    //             // left: 0;
-    //             // right: 0;
-    //             // bottom: 0;
-    //         }
+            &::before {
+                content:""; 
+                background-image: url(/assets/img/tablesetting.jpg);
+                background-size: cover;
+                background-position: center;
+                filter: blur(3px);
+                position: absolute;
+                inset: 0; /*för positionering*/
+                
+            }
 
     //         .contact-info { /*UL*/ 
     //             position: absolute;
@@ -297,9 +295,9 @@ h2 {
     //                 }
     //             }
     //         }
-    //     }
+        }
 
-    // }
+    }
     
 
 
