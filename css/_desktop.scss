@@ -219,6 +219,9 @@ h1 {
         }
         .price {
             grid-column: 11 / 12;
+            display: flex;
+            align-items: center;
+            margin-bottom: 0;
         }
     }
 
