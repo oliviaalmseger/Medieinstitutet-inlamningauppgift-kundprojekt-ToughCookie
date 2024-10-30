@@ -322,6 +322,11 @@ på menyer från mobilen. Jag tycker att det blir tydligt.*/
         border: none;
         flex: 2;
 
+        &[type="date"] {
+          color: transparent; 
+          /*Den lilla ikonen ligger kvar. Dels för att jag inte lyckas få bort den men också ur tillgänglighetssynpunkt*/
+        }
+
       }
 
       .buttons {
@@ -390,7 +395,7 @@ på menyer från mobilen. Jag tycker att det blir tydligt.*/
                     .material-symbols-outlined {
                         font-size: 60px;
                         color: $secondary-color;
-                        margin-right: 5px;
+                        margin-right: 10px;
                     }
                 }
             }
