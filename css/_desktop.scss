@@ -236,70 +236,70 @@ h2 {
         padding-left: 8px;
 
     }
-    .img-p3 {
-        grid-column: span 6;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        background-color: salmon;
+    // .img-p3 {
+    //     grid-column: span 6;
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;
+    //     position: relative;
+    //     background-color: salmon;
 
-        .table {
-            // background-image: url(/assets/img/tablesetting.jpg);
-            // background-size: cover;
-            // background-position: center;
-            // filter: blur(3px);
-            height: 500px;
-            width: 500px;
-            position: relative;
+    //     .table {
+    //         // background-image: url(/assets/img/tablesetting.jpg);
+    //         // background-size: cover;
+    //         // background-position: center;
+    //         // filter: blur(3px);
+    //         height: 500px;
+    //         width: 500px;
+    //         position: relative;
 
-            &::before {
-                content:""; 
-                background-image: url(/assets/img/tablesetting.jpg);
-                background-size: cover;
-                background-position: center;
-                filter: blur(3px);
-                position: absolute;
-                inset: 0;
-                // top: 0;
-                // left: 0;
-                // right: 0;
-                // bottom: 0;
-            }
+    //         &::before {
+    //             content:""; 
+    //             background-image: url(/assets/img/tablesetting.jpg);
+    //             background-size: cover;
+    //             background-position: center;
+    //             filter: blur(3px);
+    //             position: absolute;
+    //             inset: 0;
+    //             // top: 0;
+    //             // left: 0;
+    //             // right: 0;
+    //             // bottom: 0;
+    //         }
 
-            .contact-info { /*UL*/ 
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                padding: 0;
-                transform: translate(-50%, -50%); /*centrerar hort+vert i förhållande till parent*/
-                list-style: none;
+    //         .contact-info { /*UL*/ 
+    //             position: absolute;
+    //             top: 50%;
+    //             left: 50%;
+    //             padding: 0;
+    //             transform: translate(-50%, -50%); /*centrerar hort+vert i förhållande till parent*/
+    //             list-style: none;
     
-                .contact-list { /*Li*/
-                    display: flex;
-                    // justify-content: flex-start;
-                    // font-size: 20px;
-                    // text-decoration: none;
-                    align-items: center;
+    //             .contact-list { /*Li*/
+    //                 display: flex;
+    //                 // justify-content: flex-start;
+    //                 // font-size: 20px;
+    //                 // text-decoration: none;
+    //                 align-items: center;
                 
                     
     
-                    a {
-                        text-decoration: none;
-                        color: red;
-                        display: flex;
-                        align-items: center;
-                        /*anv ikon klassnamn ist?*/
-                        span {
-                            font-size: 2rem;
-                            margin-right: 5px;
-                        }
-                    }
-                }
-            }
-        }
+    //                 a {
+    //                     text-decoration: none;
+    //                     color: red;
+    //                     display: flex;
+    //                     align-items: center;
+    //                     /*anv ikon klassnamn ist?*/
+    //                     span {
+    //                         font-size: 2rem;
+    //                         margin-right: 5px;
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //     }
 
-    }
+    // }
     
 
 
