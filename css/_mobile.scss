@@ -348,8 +348,8 @@ på menyer från mobilen. Jag tycker att det blir tydligt.*/
     justify-content: center;
     align-items: center;
     position: relative;
-    background-color: salmon; /*BYT*/
-    border: 5px solid white;
+    background-color: black; 
+    
 
     .table {
        /*Ej bakgrundsbild i mobil/tablet pga plottrigt*/
@@ -378,10 +378,9 @@ på menyer från mobilen. Jag tycker att det blir tydligt.*/
 
                 a {
                     text-decoration: none;
-                    color: red;
+                    color: white;
                     display: flex;
                     align-items: center;
-                    /*anv ikon klassnamn ist?*/
 
                     .material-symbols-outlined {
                         font-size: 60px;
