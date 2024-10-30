@@ -152,7 +152,7 @@ h1 {
     grid-column: span 10;
     grid-template-columns: repeat(11, 1fr);
     grid-template-rows: auto auto; /*2 rader?*/
-    gap: 10px;
+    gap: 16px;
     border-top: 10px solid $primary-color;
     border-left: 10px solid $primary-color;
     border-right: 10px solid $primary-color;
