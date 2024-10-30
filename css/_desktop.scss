@@ -246,10 +246,7 @@ h2 {
         border: none; /*Ev. ta bort?*/ 
 
         .table {
-            // background-image: url(/assets/img/tablesetting.jpg);
-            // background-size: cover;
-            // background-position: center;
-            // filter: blur(3px);
+            
             height: 500px;
             width: 500px;
             position: relative;
@@ -265,36 +262,35 @@ h2 {
                 
             }
 
-    //         .contact-info { /*UL*/ 
-    //             position: absolute;
-    //             top: 50%;
-    //             left: 50%;
-    //             padding: 0;
-    //             transform: translate(-50%, -50%); /*centrerar hort+vert i förhållande till parent*/
-    //             list-style: none;
+            .contact-info { /*UL*/ 
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                padding: 0;
+                transform: translate(-50%, -50%); /*centrerar hort+vert i förhållande till parent*/
+                list-style: none;
     
-    //             .contact-list { /*Li*/
-    //                 display: flex;
-    //                 // justify-content: flex-start;
-    //                 // font-size: 20px;
-    //                 // text-decoration: none;
-    //                 align-items: center;
-                
-                    
+                .contact-list { /*Li*/
+                    display: flex;
+                    // justify-content: flex-start;
+                    font-size: 35px;
+                    // text-decoration: none;
+                    align-items: center;
+
+                    a {
+                        text-decoration: none;
+                        color: red;
+                        display: flex;
+                        align-items: center;
+                        /*anv ikon klassnamn ist?*/
     
-    //                 a {
-    //                     text-decoration: none;
-    //                     color: red;
-    //                     display: flex;
-    //                     align-items: center;
-    //                     /*anv ikon klassnamn ist?*/
-    //                     span {
-    //                         font-size: 2rem;
-    //                         margin-right: 5px;
-    //                     }
-    //                 }
-    //             }
-    //         }
+                        .material-symbols-outlined {
+                            font-size: 50px;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
         }
 
     }

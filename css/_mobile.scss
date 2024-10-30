@@ -352,27 +352,12 @@ på menyer från mobilen. Jag tycker att det blir tydligt.*/
     border: 5px solid white;
 
     .table {
-        // background-image: url(/assets/img/tablesetting.jpg);
-        // background-size: cover;
-        // background-position: center;
-        // filter: blur(3px);
+       /*Ej bakgrundsbild i mobil/tablet pga plottrigt*/
         height: 500px;
         width: 500px;
         position: relative;
 
-        // &::before {
-        //     content:""; 
-        //     background-image: url(/assets/img/tablesetting.jpg);
-        //     background-size: cover;
-        //     background-position: center;
-        //     filter: blur(3px);
-        //     position: absolute;
-        //     inset: 0;
-        //     // top: 0;
-        //     // left: 0;
-        //     // right: 0;
-        //     // bottom: 0;
-        // }
+      
 
         .contact-info { /*UL*/ 
             position: absolute;
@@ -381,15 +366,15 @@ på menyer från mobilen. Jag tycker att det blir tydligt.*/
             padding: 0;
             transform: translate(-50%, -50%); /*centrerar hort+vert i förhållande till parent*/
             list-style: none;
+            text-transform: none;
 
             .contact-list { /*Li*/
                 display: flex;
                 // justify-content: flex-start;
-                // font-size: 20px;
+                font-size: 50px; /*text ej ikon*/
+                padding: 1rem;
                 // text-decoration: none;
                 align-items: center;
-            
-                
 
                 a {
                     text-decoration: none;
@@ -397,8 +382,9 @@ på menyer från mobilen. Jag tycker att det blir tydligt.*/
                     display: flex;
                     align-items: center;
                     /*anv ikon klassnamn ist?*/
-                    span {
-                        font-size: 2rem;
+
+                    .material-symbols-outlined {
+                        font-size: 60px;
                         margin-right: 5px;
                     }
                 }
