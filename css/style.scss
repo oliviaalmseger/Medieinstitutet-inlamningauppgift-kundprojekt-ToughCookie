@@ -25,13 +25,13 @@ $secondary-font: "Roboto Condensed";
  
 
 .text {
-  width: 100%;
+  width: 90%;
   // display: flex;
   // justify-content: center;
   // text-align: center;
   max-width: 60ch;
   font-family: 'Jockey One';
-  font-size: 25px;
+  font-size: 35px;
   margin: 10px auto;
   text-align: center;
 }
@@ -61,6 +61,10 @@ $secondary-font: "Roboto Condensed";
     text-align: left;
     width: auto;
   }
+
+  // h2 {
+  //   margin-top: 0px;
+  // }
 
   // .page1-img {
   //   /*display: block;*/

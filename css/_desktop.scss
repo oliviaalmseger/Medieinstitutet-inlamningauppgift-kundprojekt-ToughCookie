@@ -34,8 +34,10 @@ h1 {
     }
 }
 
-h2 {
-    margin: 0;
+.page-title {
+    h2 {
+    margin-top: 0px;
+    }
 }
 
 .text {
@@ -43,6 +45,7 @@ h2 {
     display: block;
     justify-content: left;
     text-align: left;
+    width: 100%;
     color: $secondary-color;
   }
 
