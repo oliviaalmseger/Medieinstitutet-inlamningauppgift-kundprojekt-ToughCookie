@@ -326,6 +326,9 @@ på menyer från mobilen. Jag tycker att det blir tydligt.*/
 
       .buttons {
         margin: 10px 0;
+        display: flex;
+        justify-content: center;
+        gap: 16px;
 
         .form-button {
           font-family: $primary-font;
