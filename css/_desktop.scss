@@ -269,24 +269,26 @@ h2 {
                 padding: 0;
                 transform: translate(-50%, -50%); /*centrerar hort+vert i förhållande till parent*/
                 list-style: none;
+                filter: drop-shadow(-2px -2px 0 black);
     
                 .contact-list { /*Li*/
-                    display: flex;
+                    // display: flex;
                     // justify-content: flex-start;
                     font-size: 35px;
                     // text-decoration: none;
-                    align-items: center;
+                    // align-items: center;
 
                     a {
-                        text-decoration: none;
+                        // text-decoration: none;
                         color: #2ab0dd;
-                        display: flex;
-                        align-items: center;
+                        // display: flex;
+                        // align-items: center;
                         /*anv ikon klassnamn ist?*/
     
                         .material-symbols-outlined {
                             font-size: 50px;
                             margin-right: 10px;
+                            // filter: drop-shadow(-1px -1px 0 black);
                         }
                     }
                 }
