@@ -433,21 +433,21 @@ på menyer från mobilen. Jag tycker att det blir tydligt.*/
     }
 
   }
+}  
 
 
-.cookies {
-  background-color: #ac77ff;
-  position: fixed;
-  z-index: 999; /*Överst?*/
-  bottom: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-inline: 8px;
-  padding-block: 16px;
+  .cookies {
+    background-color: #ac77ff;
+    position: fixed;
+    z-index: 999; /*Överst?*/
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 8px;
+    padding-block: 16px;
 
 
-}
+  }
 
-}
