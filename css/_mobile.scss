@@ -103,7 +103,7 @@ nav {
       text-decoration: none;
       color: white;
       display: inline-block;
-      transition: transform 0.3 ease;
+      transition: transform 0.3s ease;
 
       &:hover {
         transform: translateX(10px); /*X flyttar endast x-axel*/ 
