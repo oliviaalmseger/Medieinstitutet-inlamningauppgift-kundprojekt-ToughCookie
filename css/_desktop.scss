@@ -1,43 +1,34 @@
-// body {
-//     background-color: rgb(244, 254, 202);
-// }
-
 main {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     gap: 16px;
-    /*flex-grow:1; lagt till*/
 }
 
 header {
     flex-direction: column;
-   /* Innan demo height: auto;*/
     display: grid;
-   /* grid-template-columns: span 1;*/
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /*efter demo här under*/
-    position: fixed; 
+    position: fixed;
     height: 100vh;
-    width: 95px; 
-    // border-right: 10px solid $primary-color;
+    width: 95px;
     border-bottom: 0;
 }
 
 h1 {
     span {
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-    display: block; /*säger i FL anv. position:fixed, då ej ny rad*/
-    margin-top: 30px;
-    letter-spacing: -3px;
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        display: block;
+        margin-top: 30px;
+        letter-spacing: -3px;
     }
 }
 
 .page-title {
     h2 {
-    margin-top: 0px;
+        margin-top: 0px;
     }
 }
 
@@ -48,129 +39,127 @@ h1 {
     text-align: left;
     width: 100%;
     color: $secondary-color;
-  }
+}
 
-  /*Marginal från vä-kant så 
-  tough cookie syns ordentligt*/
-.page1, .page2, .page3 {
+/*Marginal vä-kant så rubrik syns ordentligt*/
+.page1,
+.page2,
+.page3 {
     margin-left: 95px;
     min-height: 100vh;
 }
 
 .page1 {
-    grid-column: span 10;  
+    grid-column: span 10;
     min-height: 100vh;
-    padding-left: 10px; /*Ev bredare?*/
+    padding-left: 10px;
     border-left: 10px solid $primary-color;
     border-right: 10px solid $primary-color;
-    .top, .bottom {
+
+    .top,
+    .bottom {
         display: grid;
-        // gap: 16px; /*får upp meny */ 
-        grid-template-columns: repeat(11, 1fr);  
+        grid-template-columns: repeat(11, 1fr);
         grid-template-rows: auto auto;
     }
 
-   .top {
+    .top {
         margin-bottom: 20px;
-        .page-title {
-        grid-column: span 4; /*ev 1/span 4?*/
-    }
-    .text {
-        grid-column: span 7; /* ev 5 / span 7*/
-    }
-   } 
 
-   .bottom {
-        
+        .page-title {
+            grid-column: span 4;
+            /*ev 1/ span 4?*/
+        }
+
+        .text {
+            grid-column: span 7;
+            /*ev 5 / span 7?*/
+        }
+    }
+
+    .bottom {
         .page1-img {
             grid-column: span 5;
-            /*background-image: url('../assets/img/lettuce.jpg');
-            background-size: cover;*/
-            // background-position: center center;
             position: relative;
-            // height: 300px;
 
             img {
                 z-index: -50;
                 max-width: 100%;
-                // object-fit: cover;
-                // width: 100%;
-                // height: 100%;
             }
+
             &:hover {
                 .arrow {
-                    bottom: 1px; /*åka upp/ner??*/
+                    bottom: 1px;
                 }
             }
         }
-    
-    .arrow {
-        transform: rotate(90deg);
-        position: absolute;
-        bottom: 10px;
-        left: 8px;
-        transition: bottom 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
-        z-index: -49;
-    }
 
-    .text, .menu-link {
-        background-color: white;
-    }
-    
+        .arrow {
+            transform: rotate(90deg);
+            position: absolute;
+            bottom: 10px;
+            left: 8px;
+            transition: bottom 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+            z-index: -49;
+        }
+
+        .text,
+        .menu-link {
+            background-color: white;
+        }
+
         .text {
             color: $third-color;
             grid-column: span 6;
             border-left: 10px solid $primary-color;
             padding-left: 10px;
             font-size: 3rem;
-            margin: 0; /*?*/
+            margin: 0;
             display: inline;
         }
-    .menu-link {
-        grid-column: 6 / span 6;
-        display: block;
-        
-        padding-left: 10px;
-        margin-top: 0;
-        border-left: 10px solid $primary-color;
-        color: black;
-        text-align: left;
-        font-size: 3rem;
 
-        img {
-            margin-left: 5px;
+        .menu-link {
+            grid-column: 6 / span 6;
+            display: block;
+            padding-left: 10px;
+            margin-top: 0;
+            border-left: 10px solid $primary-color;
+            color: black;
+            text-align: left;
+            font-size: 3rem;
+
+            img {
+                margin-left: 5px;
+            }
         }
     }
-    
-   } 
 }
-// /* Lägg till grid för page 2*/
 
-.page2 { 
+.page2 {
     background-color: $primary-color;
     min-height: 100vh;
     grid-column: span 10;
     grid-template-columns: repeat(11, 1fr);
-    grid-template-rows: auto auto; /*2 rader?*/
+    grid-template-rows: auto auto;
     gap: 16px;
-    // border: 10px 10px 20px 10px solid $primary-color;
+    /*border: 10px 10px 20px 10px solid $primary-color; Varför funkar ej?*/
     border-top: 10px solid $primary-color;
     border-left: 10px solid $primary-color;
     border-right: 10px solid $primary-color;
     border-bottom: 20px solid $primary-color;
-    
 
     .page2-images {
         grid-column: 2 / -1;
         grid-row: 1;
-        display: grid; 
+        display: grid;
         grid-template-columns: repeat(11, 1fr);
-        width: auto; 
+        width: auto;
         gap: 10px;
         margin-top: 0;
 
-
-        .p2-1, .p2-middle, .p2 {
+        .p2-1,
+        .p2-middle,
+        .p2 {
             object-fit: cover;
             width: 100%;
             height: 400px;
@@ -180,10 +169,12 @@ h1 {
             grid-column: span 3;
             width: 100%;
         }
+
         .p2-middle {
             grid-column: span 4;
             width: 100%;
         }
+
         .p2 {
             grid-column: span 4;
             width: 100%;
@@ -192,11 +183,11 @@ h1 {
 
     .item {
         display: grid;
-        grid-column: 2 / -1 ;
+        grid-column: 2 / -1;
         grid-row: 2;
         grid-template-columns: repeat(11, 1fr);
         text-align: left;
-    
+
         color: black;
         background-color: white;
         border-top: 2px solid black;
@@ -207,16 +198,18 @@ h1 {
         .name {
             grid-column: 1 / 4;
         }
+
         .tags {
             grid-column: span 4;
             display: flex;
             align-items: center;
-            
         }
+
         .about {
             grid-column: 5 / 11;
             color: black;
         }
+
         .price {
             grid-column: 11 / 12;
             display: flex;
@@ -224,7 +217,6 @@ h1 {
             margin-bottom: 0;
         }
     }
-
 }
 
 .page3 {
@@ -238,7 +230,7 @@ h1 {
     display: grid;
     grid-column: span 10;
     grid-template-columns: repeat(11, 1fr);
-    grid-template-rows: auto auto; /*2 rader?*/
+    grid-template-rows: auto auto;
     gap: 10px;
     align-items: center;
 
@@ -250,35 +242,33 @@ h1 {
             max-width: 73%;
             margin-left: 5px;
         }
-
     }
+
     .img-p3 {
         grid-column: span 6;
         display: flex;
         justify-content: center;
         align-items: center;
         position: relative;
-        background-color: $secondary-color; /*ta bort/gör grön*/
-        border: none; /*Ev. ta bort?*/ 
+        background-color: $secondary-color;
+        border: none;
 
         .table {
-            
             height: 500px;
             width: 500px;
             position: relative;
 
             &::before {
-                content:""; 
+                content: "";
                 background-image: url("../assets/img/tablesetting.jpg");
                 background-size: cover;
                 background-position: center;
                 filter: blur(3px);
                 position: absolute;
                 inset: 0; /*för positionering*/
-                
             }
 
-            .contact-info { /*UL*/ 
+            .contact-info {
                 position: absolute;
                 top: 50%;
                 left: 50%;
@@ -286,32 +276,23 @@ h1 {
                 transform: translate(-50%, -50%); /*centrerar hort+vert i förhållande till parent*/
                 list-style: none;
                 filter: drop-shadow(-2px -2px 0 black);
-    
-                .contact-list { /*Li*/
-                    // display: flex;
-                    // justify-content: flex-start;
+
+                .contact-list {
                     font-size: 35px;
-                    // text-decoration: none;
-                    // align-items: center;
 
                     a {
-                        // text-decoration: none;
                         color: #2ab0dd;
-                        // display: flex;
-                        // align-items: center;
-                        /*anv ikon klassnamn ist?*/
-    
+
                         .material-symbols-outlined {
                             font-size: 50px;
                             color: #2ab0dd;
                             margin-right: 10px;
-                            // filter: drop-shadow(-1px -1px 0 black);
                         }
                     }
                 }
             }
         }
-    }     
+    }
 }
 
 .cookies {
@@ -323,13 +304,12 @@ h1 {
         font-size: 1.6rem;
     }
 
-    .decline-button, 
+    .decline-button,
     .accept-button {
         font-size: clamp(1.45rem, 8vw, 1.5rem);
         padding: 5px 45px;
     }
     .decline-button {
-        
         margin-right: 5px;
-      }
+    }
 }
