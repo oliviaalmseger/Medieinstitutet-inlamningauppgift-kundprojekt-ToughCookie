@@ -1,34 +1,23 @@
 @function rem($size) {
   @return calc($size / 16) * 1rem;
-} /*Fyller detta någon funktion om
-jag ändå använder rem ??*/
-
+} /*Förbättringsområde till nästa projekt: Ej blanda px och rem*/
 
 @import 'normalize'; 
-
 
 * {
   box-sizing: border-box;
 }
-
 /*Mina variabler*/
 $primary-color: #fff236;  
 $secondary-color:#00ff37; 
 $third-color: #aa75ff; 
-
 $primary-font: "Jockey One"; 
 $secondary-font: "Roboto Condensed"; 
 
-
-
+/*MOBIL*/
 @import 'mobile';
- 
-
 .text {
   width: 90%;
-  // display: flex;
-  // justify-content: center;
-  // text-align: center;
   max-width: 60ch;
   font-family: 'Jockey One';
   font-size: 35px;
@@ -36,21 +25,16 @@ $secondary-font: "Roboto Condensed";
   text-align: center;
 }
 
-/*.only-desktop {
-  display: none;
-}*/ 
-/*Tablet - OBS EJ "hugget i sten" bryt när det känns rätt*/
+/*TABLET/Mellanläge*/
 @media screen and (min-width:768px) { 
   @import 'tablet';
 }
 .desktop-only {
   display: none;
-
   @media (min-width: 1280px) {
     display: block;
   }
 }
-
 
 /*Desktop - 1280px eller 1366?*/
 @media screen and (min-width:1280px) {
@@ -61,19 +45,5 @@ $secondary-font: "Roboto Condensed";
     text-align: left;
     width: auto;
   }
-
-  // h2 {
-  //   margin-top: 0px;
-  // }
-
-  // .page1-img {
-  //   /*display: block;*/
-  //   .lettuce {
-  //     display: none;
-  //   }
-      
-  //   }
-  // }
-  
 }
 

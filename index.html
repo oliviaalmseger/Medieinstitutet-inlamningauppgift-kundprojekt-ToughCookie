@@ -7,7 +7,6 @@
   <!--<link rel="stylesheet" href="css/normalize.css" type="text/css"> OBS vill ha denna högst upp för att CSS topdown-->
   <link rel="stylesheet" href="css/style.css" type="text/css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jockey One|Roboto Condensed|Courier Prime">
-
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
   <!--FYLL PÅ META-->
@@ -35,10 +34,9 @@
       "priceRange": "$$",
     }
     </script>
-
 </head>
-<body>
 
+<body>
   <main>
     <header>
       <h1>
@@ -47,15 +45,14 @@
       </h1>
 
         <input class="hamburger" type="checkbox" name="hamburger">
-        <!--Bättre att sätta klass på denna input än form-->
 
-        <div class="menu"> <!--Knapp:Glöm ej a11y-->
+        <div class="menu">
           <button aria-label="toggle menu">
-            <span></span>
-            <span></span>
-            <span></span>
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
           </button>
-          <!--Lägga klass i span? "line"?-->
+          <!--Klass i span, förtydligar?-->
   
           <nav>
             <ul class="options">
@@ -71,9 +68,6 @@
             </ul>
           </nav>
         </div>
-
-      
-
     </header>
   
     <div class="page1">
@@ -100,11 +94,11 @@
           <a href="#page2" class="menu-link">Explore menu
             <img src="assets/icons/arrow-forward.svg" alt="a black forward pointing arrow" width="34" height="30">
           </a> 
-        
+        <!--Testade lägga in p+a i div, blev helt konstigt tyvärr-->
       </section>
     </div>
-
-    <div id="page2" class="page2">
+<!--PAGE 2 Börjar här-->
+    <div id="page2" class="page2"> <!--Får ej länkningen att fungera korrekt utan id?-->
       <div class="page2-images">
         <img class="p2-1" src="assets/img/chickpeabowl.jpg" alt="bowl with different veggies" width="800" height="1000">
         <img class="p2-middle" src="assets/img/hummus.jpg" alt="bowl with hummus topped with chickpeas and coriander" width="1000" height="773">
@@ -162,17 +156,15 @@
           <p class="about">Spicy bell pepper relish with crushed walnuts and pomegranate syrup</p>
           <span class="price">123 kr</span>
         </div> 
-
       </div>
-
-    </div> <!--Ta bort PLACEHOLDERS-->
-
+    </div> 
+    <!--PAGE 3 Börjar här-->
     <div class="page3">
       <span class="contact">
         <h4>Book your table</h4>
         <form>
           <label>
-            <span>Name</span> <!--Tagit bort placeholders-->
+            <span>Name</span>
             <input type="text" name="name" autocomplete="name">
           </label>
           <label>
@@ -195,16 +187,13 @@
             <span>Allgergies</span>
             <input type="text" name="comments" autocomplete="off">
           </label>
-
           <div class="buttons">
             <input class="form-button cancel-button" type="reset" value="Cancel">
             <input class="form-button request-button" type="submit" value="Request">
           </div>
-          
         </form>
-
-
       </span>
+      <!--Sektion med kontaktinfo-->
       <section class="img-p3">
         <div class="table">
           <ul class="contact-info">
@@ -232,13 +221,8 @@
                 Brända Tomten <br> 111 31 Stockholm
               </a>
             </li>
-  
           </ul>
         </div>
-         
-       
-    
-
       </section>
     </div>
     <!--End page3-->
@@ -246,12 +230,10 @@
       <p> 
         You should accept cookies.
       </p>
-    
       <div class="cookie-buttons">
         <input class="decline-button" type="reset" value="decline">
         <input class="accept-button" type="submit" value="accept">  
       </div>
-  
     </div>
   </main>
    
