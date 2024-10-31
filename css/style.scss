@@ -1,6 +1,7 @@
 @function rem($size) {
   @return calc($size / 16) * 1rem;
-} /*Förbättringsområde till nästa projekt: Ej blanda px och rem*/
+} /*Förbättringsområde till nästa projekt!!
+tog lång tid för poletten att trilla ner ang detta!*/
 
 @import 'normalize'; 
 
