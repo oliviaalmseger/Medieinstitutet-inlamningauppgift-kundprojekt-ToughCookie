@@ -445,28 +445,30 @@ på menyer från mobilen. Jag tycker att det blir tydligt.*/
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-inline: 100px;
-    padding-block: 10px;
-    padding-left: 120px;
+    padding-inline: 3%;
+    // padding-block: 10px;
+    // padding-left: 120px;
     
     p {
       font-family: $secondary-font, sans-serif;
-      font-size: 25px;
+      // font-size: 1.45rem;
+      font-size: clamp(1rem, 8vw, 1.3rem);
     }
 
     .decline-button,
     .accept-button {
       font-family: $primary-font;
       text-transform: uppercase;
-      font-size: 1.7rem;
-      padding: 0 40px;
+      // font-size: 1.45rem;
+      font-size: clamp(1rem, 8vw, 1.3rem);
+      padding: 5px 25px;
       border: none;
       border-radius: 20px;
       
     }
     .decline-button {
       background-color: $primary-color;
-      margin-right: 10px;
+      // margin-right: 5px;
     }
     
     .accept-button {

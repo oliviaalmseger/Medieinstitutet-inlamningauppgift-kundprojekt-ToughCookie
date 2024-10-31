@@ -4,5 +4,14 @@
 
 .text {
     font-size: 2.5rem;
+}
+
+.cookies {
+  .decline-button, 
+  .accept-button {
+    font-size: clamp(1.45rem, 8vw, 1.5rem);
+    padding: 5px 45px;
   }
-/* Behövs det en Tablet?? */
+
+}
+
