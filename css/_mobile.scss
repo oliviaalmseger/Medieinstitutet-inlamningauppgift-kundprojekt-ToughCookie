@@ -7,45 +7,39 @@ header {
   border-bottom: 10px solid $primary-color;
   position: fixed;
 }
-  /*Button här under*/
+  /*Styling: Button*/
 button {
   width: 35px;
   height: 35px;
   background: transparent;
   border: 0;
   position: fixed;
-  left: 20px; /*right efter video*/
+  left: 20px; 
   top: 20px;
-  z-index: 5; /*skulle även funka med 1 i detta fall*/
+  z-index: 5; 
   pointer-events: none; /*så ej registrerar några musklick*/
 
   span {
     display: block;
     width: 25px;
     height: 3px;
-    background-color: rgb(255, 242, 54); /*Enligt brief*/
+    background-color: $primary-color; /*Enligt brief*/
     border-radius: 6px;
     margin-bottom: 4px;
-    // transition: transform 0.3s ease-in;
-
   }
-  
-
 }
-
-/*TESTAR */
 
 .hamburger {
   position: fixed;
   top: 20px;
-  left: 20px;/*right*/
+  left: 20px;
   z-index: 4;
   width: 35px;
   height: 35px;
   opacity: 0;
-  
 }
 
+/*Rör balkar i sidled*/
 input:hover + .menu button {
   :nth-child(1), 
   :nth-child(2),
@@ -72,22 +66,19 @@ input:checked {
       }
     }
     & nav { 
-      /*display: block; */
       visibility: visible;
       opacity: 1;
     }
   }
 }
 
-
 nav {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #C347FF;
-  width: 100vw; /*Hela vägen ut, hela vägen ner*/
+  background-color: $third-color;
+  width: 100vw; /*Hela vägen ut + hela vägen ner*/
   height: 100vh;
-  /*opacity: 0;*/
   transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
   visibility: hidden;
   z-index: 2;
@@ -103,11 +94,9 @@ nav {
   justify-content: space-evenly;
   text-align: center;
   
-
   .menu-list {
     font-family: 'Jockey One';
     text-transform: uppercase;
-    // color: rgb(255, 255, 255);
     font-size: 4rem;
 
     a {
@@ -129,20 +118,15 @@ header {
   z-index: 2; /*!!!*/ 
   width: 100vw;
   justify-content: center;
-  background-color: rgb(0, 0, 0); /*Göra om till variabler senare*/
-  // padding-bottom: 16px;
+  background-color: rgb(0, 0, 0);
 
    h1{
-    
      margin-top: 20px;
-    //  padding-bottom: 20px;
-    //  padding: 10px 45px; /*Innan demo*/
      text-transform:uppercase;
      color: rgb(255, 255, 255);
      font-size: clamp(2.4rem, 8vw, 2.5rem);
      font-family: 'Jockey One';
      letter-spacing: 4px;
-     
    }
 }
 
@@ -152,7 +136,7 @@ header {
   position: relative;
   min-width: 300px;
   min-height: 300px;
-  z-index: -1; /*Tahini Drizz Chick*/
+  z-index: -1; 
 
   h2 {
     position: absolute;
@@ -184,11 +168,8 @@ header {
     bottom: -14px;
     font-size: 2.95rem;
     z-index: -1;
-
   }
 }
-
-
 
 .page1-img {
   display: flex;
@@ -199,15 +180,12 @@ header {
   }
 }
 
-
 p {
-  // font-size: 1.25rem;
   color: white;
   .text {
     display: flex;
     justify-content: center;
     text-align: center;
-    
   }
 }
 
@@ -222,19 +200,18 @@ p {
 .bottom {
   text-align: center;
     a {
-      // font-size: 1.25rem;
       font-family: 'Jockey One';
       color: white;
       text-transform: uppercase;
       text-decoration: none;
-    } /*PILEN?*/ 
+    }
 }
-
 
 .page2-images {
   display: flex;
   justify-content: center;
   margin: 16px 0;
+
   .p2-1, .p2 {
     width: 30%;
     height: auto;
@@ -247,9 +224,8 @@ p {
   }
 
 }
-/*Jag har valt att presentera min meny på detta sätt,
-eftersom det brukar se ut så när man tittar 
-på menyer från mobilen. Jag tycker att det blir tydligt.*/
+
+/*Meny för mobil+tablet-vy*/
 .menu-items {
   text-align: center;
   color: white;
@@ -267,15 +243,10 @@ på menyer från mobilen. Jag tycker att det blir tydligt.*/
     color: black;
     display: inline-block;
     transform: rotate(-3deg);
-    // z-index: -5;
-    // position: relative;
     
-    
-
     span {
       font-family: 'Courier Prime';
       text-transform: uppercase;
-      
     }
 
       .new {
@@ -309,14 +280,13 @@ på menyer från mobilen. Jag tycker att det blir tydligt.*/
 
   .price {
     display: block;
-    font-family: 'Jockey One';
+    font-family: 'Jockey One', sans-serif;
     font-size: 2rem;
     margin-bottom: 60px;
   }
 }
 
 .page3 {
-  // border:10px solid $secondary-color;
   font-family: $primary-font;
   text-transform: uppercase;
   color: white;
@@ -327,13 +297,11 @@ på menyer från mobilen. Jag tycker att det blir tydligt.*/
     h4 {
       font-size: 3rem;
       margin-bottom: 16px;
-    
     }
     form {
       display: flex;
       flex-direction: column;
       font-size: 2.2rem;
-      // padding-left: 20px;
 
       label {
         margin-bottom: 16px;
@@ -355,9 +323,8 @@ på menyer från mobilen. Jag tycker att det blir tydligt.*/
 
         &[type="date"] {
           color: transparent; 
-          /*Den lilla ikonen ligger kvar. Dels för att jag inte lyckas få bort den men också ur tillgänglighetssynpunkt*/
+          /*Får dock inte bort den lilla ikonen*/
         }
-
       }
 
       .buttons {
@@ -380,101 +347,84 @@ på menyer från mobilen. Jag tycker att det blir tydligt.*/
         }
       }
     }
-    
   }
 
   .img-p3 {
-    // grid-column: span 6;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     background-color: black; 
     
-    
-
     .table {
-       /*Ej bakgrundsbild i mobil/tablet pga plottrigt*/
+    /*Ej bakgrundsbild i mobil/tablet pga plottrigt*/
         height: 500px;
         width: 500px;
         position: relative;
 
-      
+      .contact-info { /*UL*/ 
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        padding: 0;
+        transform: translate(-50%, -50%); /*centrerar hort+vert i förhållande till parent*/
+        list-style: none;
+        text-transform: none;
 
-        .contact-info { /*UL*/ 
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            padding: 0;
-            transform: translate(-50%, -50%); /*centrerar hort+vert i förhållande till parent*/
-            list-style: none;
-            text-transform: none;
+        .contact-list { /*Li*/
+          display: flex;
+          font-size: 40px; /*text ej ikon*/
+          padding: 1rem;
+          align-items: center;
 
-            .contact-list { /*Li*/
-                display: flex;
-                font-size: 40px; /*text ej ikon*/
-                padding: 1rem;
-                align-items: center;
+          a {
+            text-decoration: none;
+            color: white;
+            display: flex;
+            align-items: center;
 
-                a {
-                    text-decoration: none;
-                    color: white;
-                    display: flex;
-                    align-items: center;
-
-                    .material-symbols-outlined {
-                        font-size: 60px;
-                        color: $secondary-color;
-                        margin-right: 10px;
-                    }
-                }
+            .material-symbols-outlined {
+              font-size: 60px;
+              color: $secondary-color;
+              margin-right: 10px;
             }
+          }
         }
+      }
     }
-
   }
 }  
 
-
-  .cookies {
-    background-color: #ac77ff;
-    position: fixed;
-    z-index: 999; /*Överst?*/
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-inline: 3%;
-    // padding-block: 10px;
-    // padding-left: 120px;
+.cookies {
+  background-color: #ac77ff;
+  position: fixed;
+  z-index: 999; /*Överst*/
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 3%;
     
-    p {
-      font-family: $secondary-font, sans-serif;
-      // font-size: 1.45rem;
-      font-size: clamp(1rem, 8vw, 1.3rem);
-    }
-
-    .decline-button,
-    .accept-button {
-      font-family: $primary-font;
-      text-transform: uppercase;
-      // font-size: 1.45rem;
-      font-size: clamp(1rem, 8vw, 1.3rem);
-      padding: 5px 25px;
-      border: none;
-      border-radius: 20px;
-      
-    }
-    .decline-button {
-      background-color: $primary-color;
-      // margin-right: 5px;
-    }
-    
-    .accept-button {
-      background-color: $secondary-color;
-    }
-
-
+  p {
+    font-family: $secondary-font, sans-serif;
+    font-size: clamp(1rem, 8vw, 1.3rem);
   }
+
+  .decline-button,
+  .accept-button {
+    font-family: $primary-font;
+    text-transform: uppercase;
+    font-size: clamp(1rem, 8vw, 1.3rem);
+    padding: 5px 25px;
+    border: none;
+    border-radius: 20px; 
+  }
+  .decline-button {
+    background-color: $primary-color;
+  }
+  .accept-button {
+    background-color: $secondary-color;
+  }
+}
 
