@@ -250,21 +250,21 @@ p {
     }
 
       .new {
-        background-color: #C347FF;
+        background-color: $third-color;
         transform: rotate(6deg);
         padding-inline: 15px;
         display: inline-block;
         margin-inline: 5px;
       }
       .veg {
-        background-color: #00F500;
+        background-color: $secondary-color;
         transform: rotate(0deg);
         padding-inline: 15px;
         display: inline-block;
         margin-inline: 5px;
       }
       .pop {
-        background-color: yellow;
+        background-color: $primary-color;
         transform: rotate(0deg);
         padding-inline: 2px;
         display: inline-block;
